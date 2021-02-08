@@ -1,22 +1,25 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useState } from 'react'
+import { GlobalStyles } from './styles/Global'
+import { Container, ManuscriptWrapper } from './styles/App'
+import classNames from 'classnames'
 import Manuscript from './components/Manuscript/Manuscript'
+import NavBar from './components/NavBar/NavBar'
 
-const Container = styled.div`
-  display: flex;
-  justify-content: center;
-`
+const App: React.FC = () => {
+  const [navIsOpen, setnavIsOpen] = useState<boolean>(false)
 
-const ManuscriptWrapper = styled.div`
-  width: 200px;
-`
-
-const App: React.FC = () => (
-  <Container>
-    <ManuscriptWrapper>
-      <Manuscript />
-    </ManuscriptWrapper>
-  </Container>
-)
+  return (
+    <>
+      <GlobalStyles />
+      <NavBar navIsOpen={navIsOpen} />
+      <Container className={classNames({ navIsOpen })}>
+        <button onClick={() => setnavIsOpen(!navIsOpen)}>&#9776;</button>
+        <ManuscriptWrapper>
+          <Manuscript />
+        </ManuscriptWrapper>
+      </Container>
+    </>
+  )
+}
 
 export default App
