@@ -1,7 +1,7 @@
 import React from 'react'
-import classNames from 'classnames'
 import { UlNoStyles } from '../../styles/Lists'
 import { NavBar } from '../../styles/NavBar'
+import classNames from 'classnames'
 
 interface Props {
   navIsOpen: boolean

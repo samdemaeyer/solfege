@@ -19,6 +19,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "preinstall": "cp ./pre-commit .git/hooks/pre-commit",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

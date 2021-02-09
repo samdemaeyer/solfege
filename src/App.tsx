@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import { GlobalStyles } from './styles/Global'
 import { Container, ManuscriptWrapper } from './styles/App'
-import classNames from 'classnames'
 import Manuscript from './components/Manuscript/Manuscript'
 import NavBar from './components/NavBar/NavBar'
+import classNames from 'classnames'
 
 const App: React.FC = () => {
   const [navIsOpen, setnavIsOpen] = useState<boolean>(false)
