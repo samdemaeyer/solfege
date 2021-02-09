@@ -1,6 +1,6 @@
 import React from 'react'
-import { UlNoStyles } from '../../styles/Lists'
-import { NavBar } from '../../styles/NavBar'
+import { UlNoStyles } from 'styles/Lists'
+import { NavBar } from 'styles/NavBar'
 import classNames from 'classnames'
 
 interface Props {

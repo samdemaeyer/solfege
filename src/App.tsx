@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import { GlobalStyles } from './styles/Global'
-import { Container, ManuscriptWrapper } from './styles/App'
-import Manuscript from './components/Manuscript/Manuscript'
-import NavBar from './components/NavBar/NavBar'
+import { GlobalStyles } from 'styles/Global'
+import { Container, ManuscriptWrapper } from 'styles/App'
+import Manuscript from 'components/Manuscript/Manuscript'
+import NavBar from 'components/NavBar/NavBar'
 import classNames from 'classnames'
 
 const App: React.FC = () => {
