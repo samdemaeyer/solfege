@@ -19,7 +19,7 @@ const NavBar = styled.nav`
   top: 0;
   padding: ${navBarPadding};
 
-  &.navIsOpen {
+  &.isNavOpen {
     display: block;
   }
 `

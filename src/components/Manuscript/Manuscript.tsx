@@ -1,4 +1,5 @@
 import React from 'react'
+import { Manuscript } from 'styles/Manuscript'
 import Line from './Line/Line'
 
 const notes = [
@@ -15,14 +16,14 @@ const notes = [
   { id: 'C-0', note: 'C', isVisible: false },
 ]
 
-const Manuscript: React.FC = () => {
+const ManuscriptComponent: React.FC = () => {
   return (
-    <div data-testid="Manuscript">
+    <Manuscript data-testid="Manuscript">
       {notes.map(({ id, isVisible }) => (
         <Line key={id} isVisible={isVisible} />
       ))}
-    </div>
+    </Manuscript>
   )
 }
 
-export default Manuscript
+export default ManuscriptComponent
