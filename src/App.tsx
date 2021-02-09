@@ -9,16 +9,18 @@ const App: React.FC = () => {
   const [navIsOpen, setnavIsOpen] = useState<boolean>(false)
 
   return (
-    <>
+    <div data-testid="App">
       <GlobalStyles />
-      <NavBar navIsOpen={navIsOpen} />
-      <Container className={classNames({ navIsOpen })}>
-        <button onClick={() => setnavIsOpen(!navIsOpen)}>&#9776;</button>
-        <ManuscriptWrapper>
-          <Manuscript />
+      <NavBar data-testid="NavBar" navIsOpen={navIsOpen} />
+      <Container data-testid="Container" className={classNames({ navIsOpen })}>
+        <button data-testid="NavToggleBtn" onClick={() => setnavIsOpen(!navIsOpen)}>
+          &#9776;
+        </button>
+        <ManuscriptWrapper data-testid="ManuscriptWrapper">
+          <Manuscript data-testid="Manuscript" />
         </ManuscriptWrapper>
       </Container>
-    </>
+    </div>
   )
 }
 

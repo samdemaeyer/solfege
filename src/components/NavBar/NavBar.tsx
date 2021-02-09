@@ -8,8 +8,8 @@ interface Props {
 }
 
 const NavBarComponent: React.FC<Props> = ({ navIsOpen }) => (
-  <NavBar className={classNames({ navIsOpen })}>
-    <UlNoStyles>
+  <NavBar data-testid="NavBar" className={classNames({ navIsOpen })}>
+    <UlNoStyles data-testid="UnorderedList">
       <li>
         <a href="#">Link 1</a>
       </li>

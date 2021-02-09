@@ -1,9 +1,15 @@
 import React from 'react'
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import App from './App'
 
-test('renders learn react link', () => {
-  render(<App />)
-  // const linkElement = screen.getByText(/learn react/i)
-  // expect(linkElement).toBeInTheDocument()
+describe('<App />', () => {
+  test('it should mount', () => {
+    render(<App />)
+    expect(screen.getByTestId('App')).toBeInTheDocument()
+    expect(screen.getByTestId('NavBar')).toBeInTheDocument()
+    expect(screen.getByTestId('Container')).toBeInTheDocument()
+    expect(screen.getByTestId('NavToggleBtn')).toBeInTheDocument()
+    expect(screen.getByTestId('ManuscriptWrapper')).toBeInTheDocument()
+    expect(screen.getByTestId('Manuscript')).toBeInTheDocument()
+  })
 })

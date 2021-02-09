@@ -5,7 +5,7 @@ import Line from './Line'
 
 describe('<Line />', () => {
   test('it should mount', () => {
-    render(<Line />)
+    render(<Line key="1" isVisible={true} />)
 
     const line = screen.getByTestId('Line')
 
