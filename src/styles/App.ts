@@ -11,7 +11,9 @@ const Container = styled.div`
 `
 
 const ManuscriptWrapper = styled.div`
-  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export { Container, ManuscriptWrapper }

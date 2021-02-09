@@ -16,6 +16,10 @@ const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
   }
+
+  h1 {
+    text-align: center;
+  }
 `
 
 export { AnimateLeft, GlobalStyles }
