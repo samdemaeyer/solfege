@@ -1,18 +1,18 @@
 import { createGlobalStyle, keyframes } from 'styled-components'
 
-const AnimateLeft = keyframes`
+export const AnimateRight = keyframes`
   from {
-    left:-300px;
-    opacity:0;
+    right: -300px;
+    opacity: 0;
   }
 
   to {
-    left:0;
-    opacity:1
+    right: 0;
+    opacity: 1
   }
 `
 
-const GlobalStyles = createGlobalStyle`
+export const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
   }
@@ -21,5 +21,3 @@ const GlobalStyles = createGlobalStyle`
     text-align: center;
   }
 `
-
-export { AnimateLeft, GlobalStyles }

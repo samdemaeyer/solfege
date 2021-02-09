@@ -1,6 +1,6 @@
 import React from 'react'
 import { UlNoStyles } from 'styles/Lists'
-import { NavBar } from 'styles/NavBar'
+import { NavBar } from './Styles'
 import classNames from 'classnames'
 import { Link } from 'react-router-dom'
 

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Manuscript } from 'styles/Manuscript'
+import { Manuscript } from './Styles'
 import Line from './Line/Line'
 
 const notes = [

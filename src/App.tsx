@@ -1,6 +1,6 @@
 import React from 'react'
 import { GlobalStyles } from 'styles/Global'
-import Root from './Root'
+import Root from 'components/Root/Root'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 const App: React.FC = () => {

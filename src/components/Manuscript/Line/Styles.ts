@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-const Line = styled.div`
+export const Line = styled.div`
   height: 1rem;
   position: relative;
   cursor: pointer;
@@ -32,5 +32,3 @@ const Line = styled.div`
     }
   }
 `
-
-export { Line }

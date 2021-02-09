@@ -1,6 +1,6 @@
 import React from 'react'
-import { ManuscriptWrapper } from 'styles/App'
 import Manuscript from 'components/Manuscript/Manuscript'
+import { ManuscriptWrapper } from './Styles'
 
 const Notes: React.FC = () => (
   <ManuscriptWrapper data-testid="ManuscriptWrapper">

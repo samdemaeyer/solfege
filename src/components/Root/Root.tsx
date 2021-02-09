@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Container } from 'styles/App'
+import { Container, MenuToggle } from './Styles'
 import NavBar from 'components/NavBar/NavBar'
 import Notes from 'routes/Notes'
 import classNames from 'classnames'
@@ -17,9 +17,9 @@ const Root: React.FC = () => {
     <>
       <NavBar data-testid="NavBar" isNavOpen={isNavOpen} />
       <Container data-testid="Container" className={classNames({ isNavOpen })}>
-        <button data-testid="NavToggleBtn" onClick={() => setIsNavOpen(!isNavOpen)}>
+        <MenuToggle data-testid="NavToggleBtn" onClick={() => setIsNavOpen(!isNavOpen)}>
           &#9776;
-        </button>
+        </MenuToggle>
         <Switch>
           <Route exact path="/">
             <h1>Welcome to Solfege</h1>
