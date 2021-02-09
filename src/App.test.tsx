@@ -5,11 +5,12 @@ import App from './App'
 describe('<App />', () => {
   test('it should mount', () => {
     render(<App />)
-    expect(screen.getByTestId('App')).toBeInTheDocument()
+    const welcomeText = screen.getByText(/Welcome to Solfege/i)
+
+    expect(welcomeText).toBeInTheDocument()
+    expect(welcomeText.localName).toBe('h1')
     expect(screen.getByTestId('NavBar')).toBeInTheDocument()
     expect(screen.getByTestId('Container')).toBeInTheDocument()
     expect(screen.getByTestId('NavToggleBtn')).toBeInTheDocument()
-    expect(screen.getByTestId('ManuscriptWrapper')).toBeInTheDocument()
-    expect(screen.getByTestId('Manuscript')).toBeInTheDocument()
   })
 })

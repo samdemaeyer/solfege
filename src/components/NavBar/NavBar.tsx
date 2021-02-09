@@ -2,6 +2,7 @@ import React from 'react'
 import { UlNoStyles } from 'styles/Lists'
 import { NavBar } from 'styles/NavBar'
 import classNames from 'classnames'
+import { Link } from 'react-router-dom'
 
 interface Props {
   navIsOpen: boolean
@@ -11,13 +12,10 @@ const NavBarComponent: React.FC<Props> = ({ navIsOpen }) => (
   <NavBar data-testid="NavBar" className={classNames({ navIsOpen })}>
     <UlNoStyles data-testid="UnorderedList">
       <li>
-        <a href="#">Link 1</a>
+        <Link to="/">Home</Link>
       </li>
       <li>
-        <a href="#">Link 2</a>
-      </li>
-      <li>
-        <a href="#">Link 3</a>
+        <Link to="/notes">Notes</Link>
       </li>
     </UlNoStyles>
   </NavBar>
