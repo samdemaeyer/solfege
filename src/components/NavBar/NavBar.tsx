@@ -5,11 +5,11 @@ import classNames from 'classnames'
 import { Link } from 'react-router-dom'
 
 interface Props {
-  navIsOpen: boolean
+  isNavOpen: boolean
 }
 
-const NavBarComponent: React.FC<Props> = ({ navIsOpen }) => (
-  <NavBar data-testid="NavBar" className={classNames({ navIsOpen })}>
+const NavBarComponent: React.FC<Props> = ({ isNavOpen }) => (
+  <NavBar data-testid="NavBar" className={classNames({ isNavOpen })}>
     <UlNoStyles data-testid="UnorderedList">
       <li>
         <Link to="/">Home</Link>

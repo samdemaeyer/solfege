@@ -9,8 +9,5 @@ describe('<App />', () => {
 
     expect(welcomeText).toBeInTheDocument()
     expect(welcomeText.localName).toBe('h1')
-    expect(screen.getByTestId('NavBar')).toBeInTheDocument()
-    expect(screen.getByTestId('Container')).toBeInTheDocument()
-    expect(screen.getByTestId('NavToggleBtn')).toBeInTheDocument()
   })
 })

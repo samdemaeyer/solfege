@@ -8,7 +8,7 @@ describe('<NavBar />', () => {
   beforeEach(() => {
     render(
       <Router>
-        <NavBar navIsOpen={true} />
+        <NavBar isNavOpen={true} />
       </Router>,
     )
   })
